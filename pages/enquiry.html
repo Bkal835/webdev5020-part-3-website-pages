@@ -10,60 +10,70 @@
   width:12%;  
   display:inline-block;
 }
-
 </style>
+
 <body>
     <section>
         <nav>
-        <div><a href="../index.html"><img src="/assets/icons/treeprintlogo.svg" alt="TreePrint's Logo" width="85" height="95"></a>
-        </div>
-        <div><a href="treemap.html">Tree map</a></div>
-        <div><a href="donate.html">Donate</a></div>
-        <div><a href="plantatree.html">Plant a tree</a></div>
-        <div><a href="aboutus.html">About Us</a></div>
-        <div><a href="contactus.html">Contact</a></div>
-        <div><a href="enquiry.html">Enquiry</a></div>
+            <div>
+                <a href="../index.html"><img src="/assets/icons/treeprintlogo.svg" alt="TreePrint's Logo" width="85" height="95"></a>
+            </div>
+            <div><a href="treemap.html">Tree map</a></div>
+            <div><a href="donate.html">Donate</a></div>
+            <div><a href="plantatree.html">Plant a tree</a></div>
+            <div><a href="aboutus.html">About Us</a></div>
+            <div><a href="contactus.html">Contact</a></div>
+            <div><a href="enquiry.html">Enquiry</a></div>
         </nav>
     </section>
+
     <p>How Would You Like to Get Involved?</p>
-    Volunteer
-    <p>Join our community of volunteers and help with tree-planting activities, environmental events and community projects.</p>
-    Become a Sponsor
-    <p>Support Treeprint by sponsoring tree-planting projects, community programmes or environmental initiatives.</p>
-     <form action="/js/feedback" method="post">
+        <h2>Volunteer</h2>
+    <p>
+        Join our community of volunteers and help with tree-planting activities, environmental events and community projects.
+    </p>
+        <h2>Become a Sponsor</h2>
+    <p>
+        Support Treeprint by sponsoring tree-planting projects, community programmes or environmental initiatives.
+    </p>
+
+    <form action="/js/feedback" method="post">
         <table>
-        <tr>
-            <td><label for="name">Name:</label></td>
-            <td><input type="text" id="name" name="name" required></td>
-        </tr>
-        <tr>
-            <td><label for="surname">Surname:</label></td>
-            <td><input type="text" id="surname" name="surname" required></td>
-        </tr>
-        <tr>
-            <td><label for="phone">Phone number:</label></td>
-            <td><input type="tel" id="phone" name="phone" pattern="{0-9}{10}" placeholder="e.g., 0123456789"></td>
-        </tr>
-         <tr>
-            <td><label for="email">Email:</label></td>
-            <td><input type="email" id="email" name="email" required></td>
-        </tr>
-        <tr>
-            <td><label for="enquiry">Enquiry type:</label></td>
-            <td><input type="enquiry" id="enquiry" name="enquiry" required></td>
-        </tr>
-         <tr>
-            <td><label for="message">Message:</label></td>
-            <td><textarea id="message" name="message" rows="5" cols="40"></textarea></td>
-        </tr>
-         <tr>
-            <td></td>
-            <td> <button type="submit">Submit Feedback</button>
-                 <button type="reset">Clear Form</button>
-            </td>
-        </tr>
-    </table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="surname">Surname:</label></td>
+                <td><input type="text" id="surname" name="surname" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone number:</label></td>
+                <td><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g., 0123456789"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="enquiry">Enquiry type:</label></td>
+                <td><input type="text" id="enquiry" name="enquiry" required></td>
+            </tr>
+            <tr>
+                <td><label for="message">Message:</label></td>
+                <td><textarea id="message" name="message" rows="5" cols="40"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> <button type="submit">Submit</button>
+                    <button type="reset">Clear Form</button>
+                </td>
+            </tr>
+        </table>
     </form>
+
+    <hr>
+
     <footer>
         Treeprint
 
@@ -101,5 +111,5 @@
 
         <br>&copy; 2026 Treeprint. All Rights Reserved.
 
-        </footer>
+    </footer>
 </body>
