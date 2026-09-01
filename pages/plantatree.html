@@ -10,6 +10,8 @@
   width:12%;  
   display:inline-block;
 }
+/* Lets divs sit side-by-side (like inline elements) while still accepting
+           width, height, margin, and padding (like block elements) */
 </style>
 
 <body>
@@ -17,6 +19,7 @@
         <nav>
             <div>
                 <a href="../index.html"><img src="/assets/icons/treeprintlogo.svg" alt="TreePrint's Logo" width="85" height="95"></a>
+                <!-- Logo links back to the homepage -->
             </div>
             <div><a href="treemap.html">Tree map</a></div>
             <div><a href="donate.html">Donate</a></div>
@@ -70,13 +73,16 @@
                     <option value="Colophospermum mopane">Mopane</option>
                     <option value="Adansonia digitata">Baoban</option></datalist></td>
         </tr>
+        <!-- Allow you to either select a species from the list or enter a custom value -->
          <tr>
             <td><label for="comments">Comments</label></td>
             <td><textarea id="comments" name="comments" rows="5" cols="40"></textarea></td>
+            <!-- Specify how the text's size before the need to scroll down -->
         </tr>
         <tr>
             <td></td>
-            <td> <button type="upload">Upload a photo</button>
+            <td> <button type="file" accept="image/*">Upload a photo</button>
+                <!-- Allow only image file format -->
             </td>
         </tr>
          <tr>
