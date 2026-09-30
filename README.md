@@ -63,9 +63,9 @@ The Treeprint website aims to:
 |6 – 31 Oct|Enhancing Functionality, SEO & Deployment|Location-based feature, SEO, JavaScript interactivity, forms and deployment|Complete website delivered|
 
 ## Site map
-index.html
-│
-├── aboutus.html         
+index.html  
+│  
+├── aboutus.html          
 ├── contactus.html           
 ├── donate.html          
 ├── enquiry.html
