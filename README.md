@@ -1,9 +1,9 @@
 # Title: TreePrint
 
 ## Student Information
-•	Name: Barka Kalongwe
-•	Student Number: ST10527777
-•	Module / Course: Web Development (Introduction)
+•	Name: Barka Kalongwe  
+•	Student Number: ST10527777  
+•	Module / Course: Web Development (Introduction)  
 •	Submission: Part 1*
 
 ## Project Overview
