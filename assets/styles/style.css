@@ -1,0 +1,166 @@
+/* ===== Fonts ===== */
+/* Headings: Poppins Bold */
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-Bold.ttf);
+    font-weight: 700;
+}
+/* Subheadings: Poppins SemiBold */
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-SemiBold.ttf);
+    font-weight: 600;
+}
+/* Body text: Open Sans Regular (Bold is used for buttons) */
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Bold.ttf);
+    font-weight: 700;
+}
+
+/* ===== Colours =====
+   Forest Green #2E7D32 - primary branding
+   Light Green  #81C784 - highlights and buttons
+   Earth Brown  #795548 - supporting accents
+   Sky Blue     #64B5F6 - interactive elements and links
+   White        #FFFFFF - background
+   Dark Grey    #424242 - text
+*/
+
+/* ===== General ===== */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.6;
+    color: #424242;
+    background-color: #FFFFFF;
+}
+h1, h2, h3 {
+    font-family: "Poppins", Arial, sans-serif;
+    color: #2E7D32;
+    margin-top: 0;
+}
+/* H1 = main page title */
+h1 {
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+/* H2 = section heading */
+h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+/* H3 = subsection */
+h3 {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #795548;
+    margin-bottom: 5px;
+}
+a {
+    color: #64B5F6;
+}
+hr {
+    display: none;
+}
+
+/* ===== Navigation bar ===== */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 3px solid #81C784;
+}
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+.nav-links a {
+    display: block;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 600;
+    color: #2E7D32;
+    text-decoration: none;
+}
+.nav-links a:hover {
+    background-color: #64B5F6;
+    color: #424242;
+}
+
+/* ===== Homepage banner ===== */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 60px 70px;
+    background-color: #2E7D32;
+    color: #FFFFFF;
+}
+.banner h1 {
+    color: #FFFFFF;
+    font-size: 3rem;
+    margin: 0;
+}
+.sub-banner a {
+    text-decoration: none;
+}
+.hero img {
+    display: block;
+    border: 5px solid #81C784;
+    border-radius: 10px;
+}
+
+/* ===== Homepage goal and stats ===== */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.grid-item, .grid-item2 {
+    background-color: #81C784;
+    padding: 30px;
+    border-radius: 16px;
+}
+/* Dark grey headings so they are easy to read on the green cards */
+.grid-item h2, .grid-item2 h2 {
+    color: #424242;
+}
+.grid-item2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+/* The heading takes the full first row of the stats grid */
+.grid-item2 h2 {
+    grid-column: 1 / -1;
+    margin: 0;
+}
+.grid-sub-item {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 16px;
+}
+/* Big numbers */
+#nbtrees, .grid-sub-item p:first-child {
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #2E7D32;
+    margin: 0;
+}
