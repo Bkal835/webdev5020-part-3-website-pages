@@ -164,3 +164,98 @@ hr {
     color: #2E7D32;
     margin: 0;
 }
+/* ===== Other pages ===== */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Each section and form is a white card with a green border */
+main section, form {
+    padding: 25px 30px;
+    border: 2px solid #81C784;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+iframe {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+/* About us: impact numbers */
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.stats h2 {
+    grid-column: 1 / -1;
+    margin: 0;
+}
+/* Green boxes: impact numbers and donation amounts */
+.stats p, .amounts div {
+    background-color: #81C784;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    font-weight: 700;
+    margin: 0;
+}
+.amounts {
+    display: flex;
+    gap: 20px;
+}
+.amounts div {
+    flex: 1;
+    font-size: 1.5rem;
+}
+
+/* ===== Forms and buttons ===== */
+table {
+    width: 100%;
+    max-width: 650px;
+}
+td {
+    padding: 6px;
+    vertical-align: top;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #81C784;
+    border-radius: 8px;
+    font: inherit;
+    color: #424242;
+}
+input:focus, textarea:focus {
+    outline: 2px solid #64B5F6;
+}
+/* Buttons: bold uppercase text */
+button {
+    background-color: #81C784;
+    color: #424242;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #64B5F6;
+}
+/* Buttons on the green homepage card need a white background to stand out */
+.grid-item button {
+    background-color: #FFFFFF;
+}
+.grid-item button:hover {
+    background-color: #64B5F6;
+}

@@ -4,23 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plant a Tree</title>
+    <link rel="stylesheet" href="../assets/styles/style.css">
 </head>
-<style>
-    div {
-  width:12%;  
-  display:inline-block;
-}
-/* Lets divs sit side-by-side (like inline elements) while still accepting
-           width, height, margin, and padding (like block elements) */
-</style>
 
 <body>
-    <section>
-        <nav>
-            <div>
-                <a href="../index.html"><img src="/assets/icons/treeprintlogo.svg" alt="TreePrint's Logo" width="85" height="95"></a>
-                <!-- Logo links back to the homepage -->
-            </div>
+    <section class="nav-bar">
+        <div>
+            <a href="../index.html"><img src="../assets/Icons/treeprintlogo.svg" alt="TreePrint's Logo" width="65" height="75"></a>
+            <!-- Logo links back to the homepage -->
+        </div>
+        <nav class="nav-links">
             <div><a href="treemap.html">Tree map</a></div>
             <div><a href="donate.html">Donate</a></div>
             <div><a href="plantatree.html">Plant a tree</a></div>
@@ -30,12 +23,14 @@
         </nav>
     </section>
 
-    <p>
-        Have you planted a tree? Tell us about it.
-    </p>
+    <main>
+
+    <section>
+    <h1>Have you planted a tree? Tell us about it.</h1>
     <p>
         Help Treeprint grow its global tree map by submitting information about your tree-planting activity. Your submission will be reviewed before it is added to the public map.
     </p>
+    </section>
 
     <h2>Planting Details Form</h2>
      <form action="/js/feedback" method="post">
@@ -93,6 +88,8 @@
         </tr>
     </table>
     </form>
+
+    <section>
     <p>
         Every tree planted, every contribution made and every community involved brings us closer to a greener future.
     </p>
@@ -100,6 +97,9 @@
     <p>
         All planting submissions are reviewed by the Treeprint team before being published on the map.
     </p>
+    </section>
+
+    </main>
 
     <hr>
 
@@ -112,12 +112,12 @@
 
         <p>Quick Links</p>
         <a href="../index.html">Home</a>
-        <a href="/pages/aboutus.html">About Us</a>
-        <a href="/pages/treemap.html">Tree Map</a>
-        <a href="/pages/plantatree.html">Plant a Tree</a>
-        <a href="/pages/donate.html">Donate</a>
-        <a href="/pages/enquiry.html">Enquiry</a>
-        <a href="/pages/contactus.html">Contact Us</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="treemap.html">Tree Map</a>
+        <a href="plantatree.html">Plant a Tree</a>
+        <a href="donate.html">Donate</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contactus.html">Contact Us</a>
 
         <p>Plant a Tree
         <br>Add your tree-planting activity to our map.
