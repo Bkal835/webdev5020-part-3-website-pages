@@ -113,6 +113,24 @@ index.html
 ├── plantatree.html   
 └── treemap.html
 
+## Screenshot
+### Desktop
+<img width="1917" height="1041" alt="image" src="https://github.com/user-attachments/assets/e1879ef8-1945-404a-94d5-c6a2abe96e0e" />
+
+<img width="1915" height="1027" alt="image" src="https://github.com/user-attachments/assets/6eef685b-22e0-447e-bac9-396770e5ab78" />
+
+### Tablet
+<img width="1225" height="1037" alt="image" src="https://github.com/user-attachments/assets/c77da0c8-05e2-4533-bf94-432921b42da2" />
+
+<img width="1206" height="1027" alt="image" src="https://github.com/user-attachments/assets/e52af136-6cd3-401f-9c72-5a95a5f8d429" />
+
+### Phone
+<img width="413" height="921" alt="image" src="https://github.com/user-attachments/assets/c8af249a-28b5-4b9a-a991-b055f4dad0aa" />
+
+<img width="406" height="918" alt="image" src="https://github.com/user-attachments/assets/a829c3a2-238b-4947-bf4e-4ac3cf218496" />
+
+<img width="396" height="926" alt="image" src="https://github.com/user-attachments/assets/2fc31329-3c3b-4bfd-9078-b46331271196" />
+
 ## Changelog
 ### Part 1
 Tracking changes and improvements to the website over time with the same order all tasks have been completed.
@@ -152,3 +170,34 @@ Tracking changes and improvements to the website over time with the same order a
 - Hostafrica, 2026. How Much Does It Cost to Build a Website in South Africa? [online] Available at: <https://hostafrica.co.za/blog/websites/website-basics/how-much-does-a-website-cost-in-south-africa/> [Accessed 15 August 2026].
 
 
+## Disclosure of AI Usage in My Assessment
+
+In the development of this project, I have used generative AI tools to assist in various parts of the assignment. Below is a detailed disclosure of where and how these tools were used:
+
+### 1. **Section(s) in which Generative AI was used:**
+- **Debugging**: Used AI to find and fix the layout of my page.
+
+### 2. **Name of AI Tool(s) Used:**
+- **Claude** (Anthropic)
+
+### 3. **Purpose/Intention Behind Use:**
+- **Meaning Making**: Understanding layout issue.
+- **Correcting Grammar and Spelling**: Reviewing the wording of this README.
+
+### 4. **Date(s) in Which Generative AI Was Used:**
+- **5 October 2026**
+
+### 5. **Link to the AI Chat(s) or Screenshots:**
+- **Chat 1 (App development and README)**: [Screenshot of the AI conversation/chat]
+<img width="1010" height="157" alt="image" src="https://github.com/user-attachments/assets/d40d4d80-9c88-4e51-9fe4-a6b84fcc4725" />
+
+<img width="883" height="911" alt="image" src="https://github.com/user-attachments/assets/7a621c94-9716-416c-be29-35af12182e83" />
+
+<img width="973" height="747" alt="image" src="https://github.com/user-attachments/assets/b5796ecc-d788-4c01-b111-ab600b94ca10" />
+
+
+
+
+
+
+---
