@@ -13,7 +13,7 @@ This README documents Part 1 and Part 2 of the project. Part 3 will be added in 
 
 ## Website Goals and Objectives
 
-The Treeprint website aims to: 
+The Treeprint website aims to:  
 •	Record and display tree planting locations using an interactive map.  
 •	Highlight regions where there is little or no tree coverage.  
 •	Encourage donations to support tree-planting projects.  
