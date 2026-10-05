@@ -88,7 +88,7 @@ Part 2 adds the CSS styling and the responsive web design (RWD). Every page link
 ### Responsive web design
 - Every page has the viewport meta tag so it scales correctly on mobile devices.
 - Layouts are built with flexbox and CSS grid, and the main content has a maximum width so it stays readable on large screens.
-- Two breakpoints are set with media queries:
+- Two breakpoints are set with media queries:  
 | Screen | Breakpoint | What changes |
 |--------|------------|--------------|
 |Desktop|wider than 900px|Full layout: cards side by side, four impact boxes in a row, four footer columns|
