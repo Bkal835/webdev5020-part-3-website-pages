@@ -128,7 +128,7 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    max-width: 1100px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -156,6 +156,15 @@ hr {
     padding: 20px;
     border-radius: 16px;
 }
+#center {
+    justify-self: center;
+}
+/* The heading takes the full first row, at the top of its section */
+.section h2 {
+    width: 100%;
+    order: -1;
+    margin: 0;
+}
 /* Big numbers */
 #nbtrees, .grid-sub-item p:first-child {
     font-family: "Poppins", Arial, sans-serif;
@@ -164,6 +173,7 @@ hr {
     color: #2E7D32;
     margin: 0;
 }
+
 /* ===== Other pages ===== */
 main {
     max-width: 1100px;
@@ -176,6 +186,31 @@ main section, form {
     border: 2px solid #81C784;
     border-radius: 16px;
     margin-bottom: 20px;
+}
+main section section {
+    margin-bottom: 0;
+}
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px 50px;
+    flex-wrap: wrap;
+}
+/* The text (or the stats box) fills the space next to the icon */
+.section > p, .section > .stats {
+    flex: 1;
+}
+/* Icon boxes next to each section have no border */
+.sub-section {
+    border: none;
+}
+.sub-section a {
+    text-decoration: none;
+}
+#white-title {
+    color:white;
 }
 .two-columns {
     display: grid;
@@ -192,13 +227,14 @@ iframe {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
+    border: none;
 }
 .stats h2 {
     grid-column: 1 / -1;
     margin: 0;
 }
 /* Green boxes: impact numbers and donation amounts */
-.stats p, .amounts div {
+.stats p, .amounts button {
     background-color: #81C784;
     padding: 20px;
     border-radius: 16px;
@@ -206,13 +242,43 @@ iframe {
     font-weight: 700;
     margin: 0;
 }
+/* Impact boxes: icon on top, then the number, then the label */
+.stats p a {
+    display: block;
+}
+/* Impact numbers: big Poppins Bold, straight on the green box */
+.stats strong {
+    display: block;
+    background-color: #81C784;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 1.4rem;
+}
 .amounts {
     display: flex;
     gap: 20px;
 }
-.amounts div {
+.amounts button {
     flex: 1;
     font-size: 1.5rem;
+}
+/* Custom amount: label, number box and button on one line */
+.custom-amount {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.custom-amount label {
+    font-weight: 700;
+}
+.custom-amount input {
+    flex: 1;
+    min-width: 150px;
+    max-width: 250px;
+}
+.custom-amount button {
+    margin: 0;
 }
 
 /* ===== Forms and buttons ===== */
@@ -254,8 +320,108 @@ button:hover {
 }
 /* Buttons on the green homepage card need a white background to stand out */
 .grid-item button {
-    background-color: #FFFFFF;
+    background-color: #795548;
+    color: #FFFFFF;
+}
+#centered {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
 }
 .grid-item button:hover {
     background-color: #64B5F6;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #2E7D32;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 6px solid #795548;
+}
+footer a {
+    color: #FFFFFF;
+}
+footer a:hover {
+    color: #64B5F6;
+}
+/* Footer headings are white so they show on the green background */
+footer h2, footer h3 {
+    color: #FFFFFF;
+}
+/* Four columns: about, quick links, get involved, contact */
+.footer-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+}
+/* Quick links go one under the other */
+.footer-links a {
+    display: block;
+}
+.copyright {
+    margin: 20px 0 0;
+}
+
+/* ===== Responsive design ===== */
+
+/* Tablets: the homepage cards go one under the other */
+@media (max-width: 900px) {
+    .banner {
+        gap: 30px;
+        padding: 40px;
+    }
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .stats {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-columns {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Phones: everything in one column */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    .nav-bar {
+        flex-direction: column;
+    }
+    .nav-links {
+        justify-content: center;
+    }
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    .banner h1 {
+        font-size: 2.2rem;
+    }
+    .hero img {
+        max-width: 100%;
+        height: auto;
+    }
+    .grid-item2, .two-columns, .stats, .footer-columns {
+        grid-template-columns: 1fr;
+    }
+    .amounts {
+        flex-direction: column;
+    }
+    main section, form, .grid-item, .grid-item2 {
+        padding: 20px;
+    }
+    /* Form labels go above their inputs */
+    td {
+        display: block;
+        padding: 3px 0;
+    }
 }

@@ -4,23 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate</title>
+    <link rel="stylesheet" href="../assets/styles/style.css">
 </head>
-<style>
-    div {
-  width:12%;  
-  display:inline-block;
-}
-/* Lets divs sit side-by-side (like inline elements) while still accepting
-           width, height, margin, and padding (like block elements) */
-</style>
 
 <body>
-    <section>
-        <nav>
-            <div>
-                <a href="../index.html"><img src="/assets/icons/treeprintlogo.svg" alt="TreePrint's Logo" width="85" height="95"></a>
-                <!-- Logo links back to the homepage -->
-            </div>
+    <section class="nav-bar">
+        <div>
+            <a href="../index.html"><img src="../assets/Icons/treeprintlogo.svg" alt="TreePrint's Logo" width="65" height="75"></a>
+            <!-- Logo links back to the homepage -->
+        </div>
+        <nav class="nav-links">
             <div><a href="treemap.html">Tree map</a></div>
             <div><a href="donate.html">Donate</a></div>
             <div><a href="plantatree.html">Plant a tree</a></div>
@@ -30,62 +23,88 @@
         </nav>
     </section>
 
-    <section>
-        <p>Support a Greener Future</p>
-        <p>Your contribution can help grow a healthier planet.</p>
-        <p>Your donation helps Treeprint support tree-planting projects, community education and environmental initiatives. Whether you contribute once or choose to donate every month, your support can make a lasting difference.</p>
+    <main>
+
+    <section class="banner">
+        <div class="sub-banner">
+            <a href="pages/aboutus.html"><h2 id="white-title">Support a Greener Future</h2></a> 
+            <p>Your contribution can help grow a healthier planet.</p>
+        <p>Your donation helps Treeprint support tree-planting projects, community education and environmental initiatives. 
+            Whether you contribute once or choose to donate every month, your support can make a lasting difference.</p>
+        </div>
+        
+        <a href="#" class="hero"><img src="/assets/images/donate_image.jpg" alt="Donate image" width="250" height="280"></a>
+        <!-- Implement hero image -->
+    </section><br>
+
+    
+    <section class="amounts">
+        <button type="button">R50</button>
+        <button type="button">R100</button>
+        <button type="button">R500</button>
+        <!-- Donation amounts are buttons so they can be clicked -->
     </section>
 
     <section>
-        <div>R50</div>
-        <div>R100</div>
-        <div>R500</div>
-    </section>
-
-    <section>
-        Custom
+        <h2>Custom</h2>
+        <div class="custom-amount">
+            <label for="amount">Enter your amount (R):</label>
+            <input type="number" id="amount" name="amount" min="1" placeholder="e.g., 250">
+            <!-- Only numbers from 1 upwards are allowed -->
+            <button type="button">Donate</button>
+        </div>
         <p>Your donation helps us continue creating greener communities and supporting environmental projects.</p>
         <p>Every contribution counts. Together, we can grow a greener future.</p>
     </section>
 
+    </main>
+
     <hr>
 
     <footer>
-        Treeprint
+        <div class="footer-columns">
+            <div>
+                <h2>Treeprint</h2>
+                <p>Plant Today. Sustain Tomorrow.</p>
+                <p>Treeprint is a digital platform that connects communities with tree-planting initiatives, tracks environmental progress and encourages people to create a greener future.</p>
+            </div>
 
-        <p>Plant Today. Sustain Tomorrow.</p>
+            <div>
+                <h3>Quick Links</h3>
+                <nav class="footer-links">
+                    <a href="../index.html">Home</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="treemap.html">Tree Map</a>
+                    <a href="plantatree.html">Plant a Tree</a>
+                    <a href="donate.html">Donate</a>
+                    <a href="enquiry.html">Enquiry</a>
+                    <a href="contactus.html">Contact Us</a>
+                </nav>
+            </div>
 
-        <p>Treeprint is a digital platform that connects communities with tree-planting initiatives, tracks environmental progress and encourages people to create a greener future.</p>
+            <div>
+                <h3>Get Involved</h3>
+                <p><a href="plantatree.html">Plant a Tree</a>
+                <br>Add your tree-planting activity to our map.</p>
 
-        <p>Quick Links</p>
-        <a href="../index.html">Home</a>
-        <a href="/pages/aboutus.html">About Us</a>
-        <a href="/pages/treemap.html">Tree Map</a>
-        <a href="/pages/plantatree.html">Plant a Tree</a>
-        <a href="/pages/donate.html">Donate</a>
-        <a href="/pages/enquiry.html">Enquiry</a>
-        <a href="/pages/contactus.html">Contact Us</a>
+                <p><a href="enquiry.html">Volunteer</a>
+                <br>Join our community and help with environmental projects.</p>
 
-        <p>Plant a Tree
-        <br>Add your tree-planting activity to our map.
+                <p><a href="enquiry.html">Become a Sponsor</a>
+                <br>Support tree-planting and community initiatives.</p>
+            </div>
 
-        <br>Volunteer
-        <br>Join our community and help with environmental projects.
+            <div>
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:contact@treeprint.com">contact@treeprint.com</a>
+                <br>Phone: <a href="tel:+27123456789">+27 12 345 6789</a>
+                <br>Head Office: Sandton, South Africa</p>
 
-        <br>Become a Sponsor
-        <br>Support tree-planting and community initiatives.</p>
+                <h3>Follow Us</h3>
+                <p><a href="https://www.instagram.com/" target="_blank">Instagram</a> | <a href="https://www.facebook.com/" target="_blank">Facebook</a> | <a href="https://twitter.com/" target="_blank">X</a> | <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
 
-        Contact Us
-
-        <br>Email: <a href="mailto:contact@treeprint.com">contact@treeprint.com</a>
-        <br>Phone: <a href="tel:+27123456789">+27 12 345 6789</a>
-        <br>Head Office: Sandton, South Africa
-
-        <br>Follow Us
-
-        <br><a href="https://www.instagram.com/" target="_blank"> Instagram</a> | <a href="https://www.facebook.com/" target="_blank">Facebook</a> | <a href="https://twitter.com/" target="_blank">X</a> | <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-
-        <br>&copy; 2026 Treeprint. All Rights Reserved.
-
-        </footer>
+        <p class="copyright">&copy; 2026 Treeprint. All Rights Reserved.</p>
+    </footer>
 </body>
