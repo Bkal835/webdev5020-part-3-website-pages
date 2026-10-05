@@ -91,9 +91,9 @@ Part 2 adds the CSS styling and the responsive web design (RWD). Every page link
 - Two breakpoints are set with media queries:
 | Screen | Breakpoint | What changes |
 |--------|------------|--------------|
-| Desktop | wider than 900px | Full layout: cards side by side, four impact boxes in a row, four footer columns |
-| Tablet | 900px and below | Home page cards stack one under the other, impact boxes and footer go to two columns, banner spacing is reduced |
-| Phone | 600px and below | Everything goes to one column: navigation is stacked and centred, banner text sits above/below the image, donation amounts stack, form labels move above their inputs, and headings are smaller |
+|Desktop|wider than 900px|Full layout: cards side by side, four impact boxes in a row, four footer columns|
+|Tablet|900px and below|Home page cards stack one under the other, impact boxes and footer go to two columns, banner spacing is reduced|
+|Phone|600px and below|Everything goes to one column: navigation is stacked and centred, banner text sits above/below the image, donation amounts stack, form labels move above their inputs, and headings are smaller|
 
 ## Timeline and milestone
 
