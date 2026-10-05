@@ -182,20 +182,26 @@ In the development of this project, I have used generative AI tools to assist in
 
 ### 3. **Purpose/Intention Behind Use:**
 - **Meaning Making**: Understanding layout issue.
-- **Correcting Grammar and Spelling**: Reviewing the wording of this README.
 
 ### 4. **Date(s) in Which Generative AI Was Used:**
 - **5 October 2026**
 
 ### 5. **Link to the AI Chat(s) or Screenshots:**
-- **Chat 1 (App development and README)**: [Screenshot of the AI conversation/chat]
+- **Chat 1 (Website development)**: [Screenshot of the AI conversation/chat]
 <img width="1010" height="157" alt="image" src="https://github.com/user-attachments/assets/d40d4d80-9c88-4e51-9fe4-a6b84fcc4725" />
 
 <img width="883" height="911" alt="image" src="https://github.com/user-attachments/assets/7a621c94-9716-416c-be29-35af12182e83" />
 
 <img width="973" height="747" alt="image" src="https://github.com/user-attachments/assets/b5796ecc-d788-4c01-b111-ab600b94ca10" />
 
+- **Chat 2 (Website development)**: [Screenshot of the AI conversation/chat]
+<img width="1055" height="907" alt="image" src="https://github.com/user-attachments/assets/789fab73-3ce5-4d66-a049-3e39084197be" />
 
+<img width="1008" height="918" alt="image" src="https://github.com/user-attachments/assets/81b2102e-9207-430b-a1d0-fcc419a80cb2" />
+
+<img width="1023" height="925" alt="image" src="https://github.com/user-attachments/assets/7ee47a66-41c4-498e-b54d-3557f5a122e9" />
+
+<img width="985" height="847" alt="image" src="https://github.com/user-attachments/assets/426e527f-a468-475c-a022-6618a0bf800e" />
 
 
 
