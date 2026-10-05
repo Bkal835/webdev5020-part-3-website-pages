@@ -59,13 +59,13 @@ The Treeprint website aims to:
 Part 2 adds the CSS styling and the responsive web design (RWD). Every page links to the same external stylesheet: assets/styles/style.css.
  
 ### Colour palette
-| Colour | Hex code | Purpose |
-|--------|----------|---------|
-| Forest Green | #2E7D32 | Primary branding colour (headings, banner, footer) |
-| Light Green | #81C784 | Highlights and buttons (cards, borders, buttons) |
-| Earth Brown | #795548 | Supporting accents (subheadings, footer top border) |
-| Sky Blue | #64B5F6 | Interactive elements and links (links, hover and focus states) |
-| White | #FFFFFF | Background |
+| Colour | Hex code | Purpose |  
+|--------|----------|---------|  
+| Forest Green | #2E7D32 | Primary branding colour (headings, banner, footer) |  
+| Light Green | #81C784 | Highlights and buttons (cards, borders, buttons) |  
+| Earth Brown | #795548 | Supporting accents (subheadings, footer top border) |  
+| Sky Blue | #64B5F6 | Interactive elements and links (links, hover and focus states) |  
+| White | #FFFFFF | Background |  
 | Dark Grey | #424242 | Text |
  
 ### Typography
