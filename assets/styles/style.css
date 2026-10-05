@@ -80,6 +80,13 @@ hr {
     padding: 10px 20px;
     border-bottom: 3px solid #81C784;
 }
+/* Logo grows a little when the mouse is over it */
+.nav-bar img {
+    transition: transform 0.3s;
+}
+.nav-bar img:hover {
+    transform: scale(1.15);
+}
 .nav-links {
     display: flex;
     flex-wrap: wrap;
@@ -216,6 +223,11 @@ main section section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+}
+/* A line between the two columns (Tree Map: search and region filter) */
+.separated > div:first-child {
+    border-right: 2px solid #81C784;
+    padding-right: 30px;
 }
 iframe {
     width: 100%;
@@ -412,6 +424,13 @@ footer h2, footer h3 {
     }
     .grid-item2, .two-columns, .stats, .footer-columns {
         grid-template-columns: 1fr;
+    }
+    /* The columns are stacked, so the line goes underneath instead */
+    .separated > div:first-child {
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 2px solid #81C784;
+        padding-bottom: 20px;
     }
     .amounts {
         flex-direction: column;
