@@ -13,12 +13,12 @@ This README documents Part 1 and Part 2 of the project. Part 3 will be added in 
 
 ## Website Goals and Objectives
 
-The Treeprint website aims to: 
-•	Record and display tree planting locations using an interactive map. 
-•	Highlight regions where there is little or no tree coverage. 
-•	Encourage donations to support tree-planting projects. 
-•	Track yearly tree-planting goals and display progress. 
-•	Educate visitors about environmental conservation. 
+The Treeprint website aims to:  
+•	Record and display tree planting locations using an interactive map.  
+•	Highlight regions where there is little or no tree coverage.  
+•	Encourage donations to support tree-planting projects.  
+•	Track yearly tree-planting goals and display progress.  
+•	Educate visitors about environmental conservation.  
 •	Increase community participation in reforestation projects. 
 
 ## Key Features and Functionality (Part 1)
@@ -59,13 +59,13 @@ The Treeprint website aims to:
 Part 2 adds the CSS styling and the responsive web design (RWD). Every page links to the same external stylesheet: assets/styles/style.css.
  
 ### Colour palette
-| Colour | Hex code | Purpose |
-|--------|----------|---------|
-| Forest Green | #2E7D32 | Primary branding colour (headings, banner, footer) |
-| Light Green | #81C784 | Highlights and buttons (cards, borders, buttons) |
-| Earth Brown | #795548 | Supporting accents (subheadings, footer top border) |
-| Sky Blue | #64B5F6 | Interactive elements and links (links, hover and focus states) |
-| White | #FFFFFF | Background |
+| Colour | Hex code | Purpose |  
+|--------|----------|---------|  
+| Forest Green | #2E7D32 | Primary branding colour (headings, banner, footer) |  
+| Light Green | #81C784 | Highlights and buttons (cards, borders, buttons) |  
+| Earth Brown | #795548 | Supporting accents (subheadings, footer top border) |  
+| Sky Blue | #64B5F6 | Interactive elements and links (links, hover and focus states) |  
+| White | #FFFFFF | Background |  
 | Dark Grey | #424242 | Text |
  
 ### Typography
@@ -89,11 +89,12 @@ Part 2 adds the CSS styling and the responsive web design (RWD). Every page link
 - Every page has the viewport meta tag so it scales correctly on mobile devices.
 - Layouts are built with flexbox and CSS grid, and the main content has a maximum width so it stays readable on large screens.
 - Two breakpoints are set with media queries:
+
 | Screen | Breakpoint | What changes |
 |--------|------------|--------------|
-| Desktop | wider than 900px | Full layout: cards side by side, four impact boxes in a row, four footer columns |
-| Tablet | 900px and below | Home page cards stack one under the other, impact boxes and footer go to two columns, banner spacing is reduced |
-| Phone | 600px and below | Everything goes to one column: navigation is stacked and centred, banner text sits above/below the image, donation amounts stack, form labels move above their inputs, and headings are smaller |
+|Desktop|wider than 900px|Full layout: cards side by side, four impact boxes in a row, four footer columns|
+|Tablet|900px and below|Home page cards stack one under the other, impact boxes and footer go to two columns, banner spacing is reduced|
+|Phone|600px and below|Everything goes to one column: navigation is stacked and centred, banner text sits above/below the image, donation amounts stack, form labels move above their inputs, and headings are smaller|
 
 ## Timeline and milestone
 
@@ -182,20 +183,26 @@ In the development of this project, I have used generative AI tools to assist in
 
 ### 3. **Purpose/Intention Behind Use:**
 - **Meaning Making**: Understanding layout issue.
-- **Correcting Grammar and Spelling**: Reviewing the wording of this README.
 
 ### 4. **Date(s) in Which Generative AI Was Used:**
 - **5 October 2026**
 
 ### 5. **Link to the AI Chat(s) or Screenshots:**
-- **Chat 1 (App development and README)**: [Screenshot of the AI conversation/chat]
+- **Chat 1 (Website development)**: [Screenshot of the AI conversation/chat]
 <img width="1010" height="157" alt="image" src="https://github.com/user-attachments/assets/d40d4d80-9c88-4e51-9fe4-a6b84fcc4725" />
 
 <img width="883" height="911" alt="image" src="https://github.com/user-attachments/assets/7a621c94-9716-416c-be29-35af12182e83" />
 
 <img width="973" height="747" alt="image" src="https://github.com/user-attachments/assets/b5796ecc-d788-4c01-b111-ab600b94ca10" />
 
+- **Chat 2 (Website development)**: [Screenshot of the AI conversation/chat]
+<img width="1055" height="907" alt="image" src="https://github.com/user-attachments/assets/789fab73-3ce5-4d66-a049-3e39084197be" />
 
+<img width="1008" height="918" alt="image" src="https://github.com/user-attachments/assets/81b2102e-9207-430b-a1d0-fcc419a80cb2" />
+
+<img width="1023" height="925" alt="image" src="https://github.com/user-attachments/assets/7ee47a66-41c4-498e-b54d-3557f5a122e9" />
+
+<img width="985" height="847" alt="image" src="https://github.com/user-attachments/assets/426e527f-a468-475c-a022-6618a0bf800e" />
 
 
 
