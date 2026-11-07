@@ -216,6 +216,17 @@ main section section {
 .sub-section a {
     text-decoration: none;
 }
+#enquiry {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #81C784;
+    border-radius: 8px;
+    font: inherit;
+    color: #424242;
+}
+#enquiry:focus {
+    outline: 2px solid #64B5F6;
+}
 #white-title {
     color:white;
 }
