@@ -71,6 +71,11 @@ a {
 hr {
     display: none;
 }
+/* Images shrink with the screen and keep their proportions */
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* Navigation bar */
 .nav-bar {
@@ -105,7 +110,11 @@ hr {
     background-color: #64B5F6;
     color: #424242;
 }
-
+/* The page you are on is dark green in the navigation bar */
+.nav-links a.active {
+    background-color: #2E7D32;
+    color: #FFFFFF;
+}
 /* Homepage banner */
 .banner {
     display: flex;
@@ -124,8 +133,30 @@ hr {
 .sub-banner a {
     text-decoration: none;
 }
+/* Links on the green banner are white so they can be read */
+.sub-banner p a {
+    text-decoration: underline;
+}
+.banner a {
+    color: #FFFFFF;
+}
+/* Banner titles on the other pages are a little smaller than the homepage title */
+main .banner h1 {
+    font-size: 2.2rem;
+    margin: 0 0 10px;
+}
+/* The picture keeps its size next to long text and its proportions: it is cropped to fit, never stretched */
+.hero {
+    flex-shrink: 0;
+    max-width: 100%;
+}
 .hero img {
     display: block;
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 250 / 280;
+    object-fit: cover;
     border: 5px solid #81C784;
     border-radius: 10px;
 }
@@ -244,6 +275,8 @@ iframe {
     width: 100%;
     border: none;
     border-radius: 10px;
+    height: auto;
+    aspect-ratio: 4 / 3;
 }
 /* About us: impact numbers */
 .stats {
@@ -356,6 +389,115 @@ button:hover {
     background-color: #64B5F6;
 }
 
+/* Feedback messages */
+/* Message under a field: red for a mistake, green when the field is correct */
+.error-message {
+    display: block;
+    min-height: 20px;
+    margin-top: 4px;
+    font-size: 0.85rem;
+    color: #C62828;
+}
+.error-message.ok {
+    color: #2E7D32;
+}
+input.input-error, textarea.input-error {
+    border-color: #C62828;
+}
+input.input-success, textarea.input-success {
+    border-color: #2E7D32;
+}
+/* Box under a form: green when it worked, red when something is wrong */
+#result {
+    display: none;
+    margin-bottom: 20px;
+    padding: 20px 30px;
+    border-radius: 16px;
+}
+#result.success {
+    display: block;
+    background-color: #E8F5E9;
+    border: 2px solid #2E7D32;
+}
+#result.error {
+    display: block;
+    background-color: #FFEBEE;
+    border: 2px solid #C62828;
+    color: #B71C1C;
+}
+#result .result-header {
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #2E7D32;
+    margin-bottom: 10px;
+}
+#result.error .result-header {
+    color: #B71C1C;
+}
+#result .result-details p {
+    margin: 0 0 8px;
+}
+#result .result-details span {
+    font-weight: 700;
+}
+/* The donation amount that was chosen */
+.amounts button.selected {
+    background-color: #2E7D32;
+    color: #FFFFFF;
+}
+/* A link to a related page at the bottom of a page */
+.more-link {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+/* Events page */
+/* Pictures in a grid: three columns on a computer */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+.event {
+    margin: 0;
+    border: 1px solid #81C784;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+.event img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+.event figcaption {
+    padding: 15px 18px 18px;
+}
+.event h3 {
+    margin-top: 0;
+}
+.event p {
+    margin: 0 0 8px;
+    font-size: 0.95rem;
+}
+.event .event-meta {
+    color: #795548;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+.event .event-result {
+    margin: 12px 0 0;
+    padding-top: 10px;
+    border-top: 1px solid #81C784;
+    font-size: 0.85rem;
+}
+.event .event-result strong {
+    color: #2E7D32;
+}
 /* Footer */
 footer {
     background-color: #2E7D32;
