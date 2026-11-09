@@ -273,11 +273,6 @@ main section section {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
-/* A line between the two columns (Tree Map: search and region filter) */
-.separated > div:first-child {
-    border-right: 2px solid #81C784;
-    padding-right: 30px;
-}
 iframe {
     width: 100%;
     border: none;
@@ -641,10 +636,10 @@ footer h2, footer h3 {
     .gallery {
         grid-template-columns: 1fr 1fr;
     }
-}
     .location-grid {
         grid-template-columns: 1fr 1fr;
     }
+}
 
 /* Phones: everything in one column */
 @media (max-width: 600px) {
@@ -675,13 +670,6 @@ footer h2, footer h3 {
     .grid-item2, .two-columns, .stats, .footer-columns {
         grid-template-columns: 1fr;
     }
-    /* The columns are stacked, so the line goes underneath instead */
-    .separated > div:first-child {
-        border-right: none;
-        padding-right: 0;
-        border-bottom: 2px solid #81C784;
-        padding-bottom: 20px;
-    }
     .amounts {
         flex-direction: column;
     }
@@ -693,10 +681,31 @@ footer h2, footer h3 {
         display: block;
         padding: 3px 0;
     }
-}
+    /* Events page: one event per line */
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    /* About us: the icon goes on top of its content */
+    .section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 20px;
+        gap: 15px;
+    }
+    .section h2 {
+        order: 0;
+    }
+    .sub-section {
+        padding: 0;
+    }
+    .section > p, .section > .stats {
+        flex: none;
+        width: 100%;
+    }
     .location-grid {
         grid-template-columns: 1fr;
     }
     #map {
         height: 300px;
     }
+}

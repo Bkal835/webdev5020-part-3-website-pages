@@ -18,7 +18,7 @@
     <meta property="og:description" content="Tell Treeprint about the tree you planted. Submit the date, species, number of trees and a photo, and we will review it before adding it to the public tree map.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://127.0.0.1:5507/pages/plantatree.html">
-    <meta property="og:image" content="http://127.0.0.1:5507/assets/images/plantatree_image.jpg">
+    <meta property="og:image" content="http://127.0.0.1:5507/assets/images/homepage_banner.jpg">
     <link rel="stylesheet" href="../assets/styles/style.css">
     <script defer src="../js/script.js"></script>
 </head>
@@ -26,13 +26,14 @@
 <body>
     <section class="nav-bar">
         <div>
-            <a href="../index.html"><img src="../assets/icons/treeprintlogo.svg" alt="TreePrint's Logo" width="65" height="75"></a>
+            <a href="../index.html"><img src="../assets/icons/treeprintlogo.svg" alt="Treeprint logo: a green tree. Select it to go to the homepage" width="65" height="75"></a>
             <!-- Logo links back to the homepage -->
         </div>
-        <nav class="nav-links">
+        <nav class="nav-links" aria-label="Main navigation">
             <div><a href="treemap.html">Tree map</a></div>
             <div><a href="donate.html">Donate</a></div>
-            <div><a href="plantatree.html">Plant a tree</a></div>
+            <div><a href="plantatree.html" class="active" aria-current="page">Plant a tree</a></div>
+            <div><a href="events.html">Events</a></div>
             <div><a href="aboutus.html">About Us</a></div>
             <div><a href="contactus.html">Contact</a></div>
             <div><a href="enquiry.html">Enquiry</a></div>
@@ -41,35 +42,38 @@
 
     <main>
 
-    <section>
-    <h1>Have you planted a tree? Tell us about it.</h1>
-    <p>
-        Help Treeprint grow its global tree map by submitting information about your tree-planting activity. Your submission will be reviewed before it is added to the public map.
-    </p>
+    <section class="banner">
+        <div class="sub-banner">
+            <h1 id="white-title">Have you planted a tree? Tell us about it.</h1>
+            <p>
+                Help Treeprint grow its global tree map by submitting information about your tree-planting activity. Your submission will be reviewed before it is added to the public map.
+            </p>
+        </div>
+        <!-- To add a picture, put: <a href="#" class="hero"><img src="../assets/images/your_picture.jpg" alt="..." width="250" height="280"></a> here -->
     </section>
 
     <h2>Planting Details Form</h2>
-     <form action="/js/feedback" method="post">
+     <form id="plantForm" action="/js/feedback" method="post" novalidate>
         <table>
         <tr>
             <td><label for="fullname">Full Name:</label></td>
-            <td><input type="text" id="fullname" name="fullname" required></td>
+            <td><input type="text" id="fullname" name="fullname" required><span class="error-message" id="fullnameError"></span></td>
         </tr>
          <tr>
             <td><label for="email">Email:</label></td>
-            <td><input type="email" id="email" name="email" required></td>
+            <td><input type="email" id="email" name="email" required><span class="error-message" id="emailError"></span></td>
         </tr>
          <tr>
             <td><label for="datepl">Date Planted:</label></td>
-            <td> <input type="date" id="datepl" name="datepl" min="1900-01-01" max="2027-12-31"></td>
+            <td> <input type="date" id="datepl" name="datepl" min="1900-01-01" max="2027-12-31"><span class="error-message" id="dateplError"></span></td>
         </tr>
          <tr>
             <td> <label for="num">Number of Trees Planted:</label></td>
-            <td> <input type="number" id="num" name="num" min="1" ></td>
+            <td> <input type="number" id="num" name="num" min="1" ><span class="error-message" id="numError"></span></td>
         </tr>
          <tr>
-            <td> <label for="species">Choose or select a species:</label></td>
-            <td> <input list="species" name="species"></td>
+            <td> <label for="speciesInput">Choose or select a species:</label></td>
+            <td> <input list="species" id="speciesInput" name="species"><span class="error-message" id="speciesError"></span></td>
             <td> <datalist id="species" >
                     <option value="Searsia lancea">Karee</option>
                     <option value="Kiggelaria africana">Wild Peach</option>
@@ -79,10 +83,10 @@
                     <option value="Ekebergia capensis">Cape Ash</option>
                     <option value="Podocarpus latifolius">Real Yellowwood</option>
                     <option value="Afrocarpus falcatus">Outeniqua Yellowwood</option>
-                    <option value="Rapanea melanophloeos">Cape Beec</option>
+                    <option value="Rapanea melanophloeos">Cape Beech</option>
                     <option value="Sclerocarya birrea">Marula</option>
                     <option value="Colophospermum mopane">Mopane</option>
-                    <option value="Adansonia digitata">Baoban</option></datalist></td>
+                    <option value="Adansonia digitata">Baobab</option></datalist></td>
         </tr>
         <!-- Allow you to either select a species from the list or enter a custom value -->
          <tr>
@@ -92,8 +96,10 @@
         </tr>
         <tr>
             <td></td>
-            <td> <button type="file" accept="image/*">Upload a photo</button>
+            <td> <button type="button" id="uploadBtn">Upload a photo</button>
+                <input type="file" id="photo" name="photo" accept="image/*" hidden>
                 <!-- Allow only image file format -->
+                <span class="error-message" id="photoError"></span>
             </td>
         </tr>
          <tr>
@@ -105,6 +111,9 @@
     </table>
     </form>
 
+    <!-- The feedback message is shown here by js/script.js -->
+    <div id="result" aria-live="polite"></div>
+
     <section>
     <p>
         Every tree planted, every contribution made and every community involved brings us closer to a greener future.
@@ -114,6 +123,9 @@
         All planting submissions are reviewed by the Treeprint team before being published on the map.
     </p>
     </section>
+
+    <!-- SEO: a descriptive link to a related page -->
+    <p class="more-link"><a href="treemap.html">See where trees are being planted on the Tree Map</a></p>
 
     </main>
 
@@ -129,11 +141,12 @@
 
             <div>
                 <h3>Quick Links</h3>
-                <nav class="footer-links">
+                <nav class="footer-links" aria-label="Footer navigation">
                     <a href="../index.html">Home</a>
                     <a href="aboutus.html">About Us</a>
                     <a href="treemap.html">Tree Map</a>
                     <a href="plantatree.html">Plant a Tree</a>
+                    <a href="events.html">Events</a>
                     <a href="donate.html">Donate</a>
                     <a href="enquiry.html">Enquiry</a>
                     <a href="contactus.html">Contact Us</a>

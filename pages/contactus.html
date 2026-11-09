@@ -18,34 +18,39 @@
     <meta property="og:description" content="Contact Treeprint by email, phone or social media, and find our Head Office in Sandton and our Roodepoort office on the map. We would love to hear from you.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://127.0.0.1:5507/pages/contactus.html">
-    <meta property="og:image" content="http://127.0.0.1:5507/assets/images/contact_image.jpg">
+    <meta property="og:image" content="http://127.0.0.1:5507/assets/images/homepage_banner.jpg">
     <link rel="stylesheet" href="../assets/styles/style.css">
 </head>
 
 <body>
     <section class="nav-bar">
         <div>
-            <a href="../index.html"><img src="../assets/icons/treeprintlogo.svg" alt="TreePrint's Logo" width="65" height="75"></a>
+            <a href="../index.html"><img src="../assets/icons/treeprintlogo.svg" alt="Treeprint logo: a green tree. Select it to go to the homepage" width="65" height="75"></a>
             <!-- Logo links back to the homepage -->
         </div>
-        <nav class="nav-links">
+        <nav class="nav-links" aria-label="Main navigation">
             <div><a href="treemap.html">Tree map</a></div>
             <div><a href="donate.html">Donate</a></div>
             <div><a href="plantatree.html">Plant a tree</a></div>
+            <div><a href="events.html">Events</a></div>
             <div><a href="aboutus.html">About Us</a></div>
-            <div><a href="contactus.html">Contact</a></div>
+            <div><a href="contactus.html" class="active" aria-current="page">Contact</a></div>
             <div><a href="enquiry.html">Enquiry</a></div>
         </nav>
     </section>
 
     <main>
-    <h1>Contact Us</h1>
-
-    <section>
-        Contact: <a href="mailto:contact@treeprint.com">contact@treeprint.com</a>
-        <br>Call: <a href="tel:+1234567890">+27 12 345 6789</a>
-        <br>Social Media: <a href="https://www.instagram.com/" target="_blank"> Instagram</a> | <a href="https://www.facebook.com/" target="_blank">Facebook</a> | <a href="https://twitter.com/" target="_blank">X</a> | <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-        <!-- Open links in a new tab -->
+    <section class="banner">
+        <div class="sub-banner">
+            <h1 id="white-title">Contact Us</h1>
+            <p>
+                Contact: <a href="mailto:contact@treeprint.com">contact@treeprint.com</a>
+                <br>Call: <a href="tel:+27123456789">+27 12 345 6789</a>
+                <br>Social Media: <a href="https://www.instagram.com/" target="_blank"> Instagram</a> | <a href="https://www.facebook.com/" target="_blank">Facebook</a> | <a href="https://twitter.com/" target="_blank">X</a> | <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+                <!-- Open links in a new tab -->
+            </p>
+        </div>
+        <!-- To add a picture, put: <a href="#" class="hero"><img src="../assets/images/your_picture.jpg" alt="..." width="250" height="280"></a> here -->
     </section>
 
     <section class="two-columns">
@@ -54,15 +59,18 @@
         <h3>Head Office</h3>
         <p>112 Grayston Drive, Sandown, Sandton, 2196</p>
 
-        <h3>Roodeport Office</h3>
+        <h3>Roodepoort Office</h3>
         <p>144 Peter Road, Ruimsig, Roodepoort, 1724</p>
         </div>
 
         <div>
-            <iframe src="https://www.google.com/maps/d/embed?mid=1tUMABQNjwzeNdn5lp2ijWpCC62abzFE&ehbc=2E312F" width="640" height="480"></iframe>
+            <iframe title="Google map showing the Treeprint offices in Sandton and Roodepoort" loading="lazy" src="https://www.google.com/maps/d/embed?mid=1tUMABQNjwzeNdn5lp2ijWpCC62abzFE&ehbc=2E312F" width="640" height="480"></iframe>
             <!-- Bring the map into the page with location details -->
         </div>
     </section>
+
+    <!-- SEO: a descriptive link to a related page -->
+    <p class="more-link"><a href="enquiry.html">Send us an enquiry about volunteering or sponsoring</a></p>
 
     </main>
 
@@ -78,11 +86,12 @@
 
             <div>
                 <h3>Quick Links</h3>
-                <nav class="footer-links">
+                <nav class="footer-links" aria-label="Footer navigation">
                     <a href="../index.html">Home</a>
                     <a href="aboutus.html">About Us</a>
                     <a href="treemap.html">Tree Map</a>
                     <a href="plantatree.html">Plant a Tree</a>
+                    <a href="events.html">Events</a>
                     <a href="donate.html">Donate</a>
                     <a href="enquiry.html">Enquiry</a>
                     <a href="contactus.html">Contact Us</a>
