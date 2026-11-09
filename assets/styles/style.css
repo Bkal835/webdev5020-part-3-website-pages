@@ -133,6 +133,10 @@ img {
 .sub-banner a {
     text-decoration: none;
 }
+.sub-banner h1:hover {
+    text-decoration: none;
+    color:#795548;
+}
 /* Links on the green banner are white so they can be read */
 .sub-banner p a {
     text-decoration: underline;
